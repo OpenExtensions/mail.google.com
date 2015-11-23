@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+
+  "name": "OpenExtensions mail.google.com",
+  "description": "Google Chrome Extension to add functionality to mail.google.com",
+  "version": "1.0.0",
+
+  "content_scripts": [
+    {
+      "matches": ["https://mail.google.com/*"],
+      "js": ["contentscript.js"]
+    }
+  ]
+}
